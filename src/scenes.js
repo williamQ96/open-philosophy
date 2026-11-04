@@ -9,7 +9,7 @@ export function buildSisyphus(scene){
  // An inclined path makes the endless motion readable from the opening view.
  const path=mesh(new THREE.BoxGeometry(7,.08,1.65),mat(0xa4947d),0,1.38,3);path.rotation.z=.4;root.add(path);
  const moving=new THREE.Group();root.add(moving);const boulder=mesh(new THREE.IcosahedronGeometry(.83,1),stone,.65,.92,0);moving.add(boulder);
- const body=new THREE.Group();moving.add(body);body.add(mesh(new THREE.SphereGeometry(.18,16,12),figure,-.52,1.13,0));
+ const body=new THREE.Group();body.position.z=.55;moving.add(body);body.add(mesh(new THREE.SphereGeometry(.18,16,12),figure,-.52,1.13,0));
  const v=(x,y,z)=>new THREE.Vector3(x,y,z);body.add(limb(v(-.7,.45,0),v(-.43,.97,0),.12,figure));body.add(limb(v(-.43,.94,0),v(.05,.98,0),.075,figure));body.add(limb(v(-.7,.48,0),v(-1,.05,.17),.085,figure));body.add(limb(v(-.7,.48,0),v(-.38,.05,-.18),.085,figure));
  return {update(t,value){const cycle=(t*(.045+value*.12))%1;const up=cycle<.8;const q=up?cycle/.8:1-(cycle-.8)/.2;moving.position.set(-2.8+q*5.5,.25+q*2.28,3);boulder.rotation.z=-q*6;body.visible=up;},dispose(){scene.remove(root);dispose(root)}};
 }
@@ -26,4 +26,5 @@ export function buildPanopticon(scene){
 }
 function dispose(root){root.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){for(const m of [].concat(o.material))m.dispose()}})}
 export const builders={sisyphus:buildSisyphus,panopticon:buildPanopticon};
+
 

@@ -1,6 +1,12 @@
 # Open Philosophy / 开放哲学
 
-An interactive collection of philosophical ideas, expressed as explorable Three.js scenes. Start with Sisyphus and the Panopticon. These are interpretive models, not historical reconstructions or exhaustive accounts.
+An interactive collection of ideas from world philosophy, classical and modern traditions, and related mathematical thought experiments. These are interpretive models, not historical reconstructions or exhaustive accounts. English is the default; the language selector stores a Chinese preference locally.
+
+## Maturity
+
+**Level 1** means a recognizable, playable first interpretation with a concept-specific interaction, concise context and a source. It does not imply historical completeness or consensus. Sisyphus, the Panopticon, Plato's Cave, the Ship of Theseus and the Veil of Ignorance are level 1.
+
+**Whitebox** means a navigable catalog entry with a schematic concept-specific geometry, bilingual question, context and source; its distinctive scene and concept-specific interaction remain future work. The remaining nine entries include the Butterfly Dream and the Infinite Monkey Theorem. The latter is a mathematical probability result related to philosophical questions, not itself a philosophical doctrine.
 
 ## Run
 
@@ -17,7 +23,7 @@ Drag to orbit, scroll to zoom, use the slider to change the animation, and pause
 
 ## Extend
 
-Add metadata to `src/concepts.js` and a builder to `src/scenes.js`. A builder receives the shared Three.js scene and returns `update(time, value)` and `dispose()`. Dispose geometries and materials when switching scenes. Keep concept-specific content separate from shared UI and rendering.
+Add bilingual metadata and a maturity level to `src/concepts.js` and, when ready, a builder to `src/scenes.js`. A builder receives the shared Three.js scene and returns `update(time, value)` and `dispose()`. Dispose geometries and materials when switching scenes. Keep concept-specific content separate from shared UI and rendering.
 
 ## Lineage
 

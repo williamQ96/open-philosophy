@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T13:52:23.538Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "10",
+      "id": "socratic",
+      "title": "苏格拉底式无知",
+      "actual": "10-socratic.png",
+      "concept": "../concept-renders-2026-11-16/10-socratic.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "10-socratic-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "10-socratic-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

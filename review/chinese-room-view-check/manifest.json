@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T13:33:09.328Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "09",
+      "id": "chinese-room",
+      "title": "中文房间",
+      "actual": "09-chinese-room.png",
+      "concept": "../concept-renders-2026-11-16/09-chinese-room.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "09-chinese-room-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "09-chinese-room-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

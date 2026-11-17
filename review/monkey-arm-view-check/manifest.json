@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T12:00:02.000Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "14",
+      "id": "monkey",
+      "title": "无限猴子定理",
+      "actual": "14-monkey.png",
+      "concept": "../concept-renders-2026-11-16/14-monkey.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "14-monkey-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "14-monkey-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

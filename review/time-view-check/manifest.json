@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-17T13:35:12.733Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "22",
+      "id": "time-frames",
+      "title": "时间：金钱还是花园？",
+      "actual": "22-time-frames.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/22-time-frames.png",
+      "alternate": "22-time-frames-alternate.png",
+      "alternateLabel": "花园框架"
+    }
+  ]
+}

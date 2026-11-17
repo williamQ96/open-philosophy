@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T13:27:39.808Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "13",
+      "id": "butterfly",
+      "title": "庄周梦蝶",
+      "actual": "13-butterfly.png",
+      "concept": "../concept-renders-2026-11-16/13-butterfly.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "13-butterfly-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "13-butterfly-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

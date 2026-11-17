@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T13:47:20.234Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "02",
+      "id": "panopticon",
+      "title": "环形监狱",
+      "actual": "02-panopticon.png",
+      "concept": "../concept-renders-2026-11-16/02-panopticon.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "02-panopticon-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "02-panopticon-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-17T14:07:03.054Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "20",
+      "id": "twins",
+      "title": "双胞胎与遗传率",
+      "actual": "20-twins.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/20-twins.png",
+      "alternate": "20-twins-alternate.png",
+      "alternateLabel": "不同家庭环境"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T14:16:31.059Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "06",
+      "id": "trolley",
+      "title": "电车难题",
+      "actual": "06-trolley.png",
+      "concept": "../concept-renders-2026-11-16/06-trolley.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "06-trolley-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "06-trolley-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

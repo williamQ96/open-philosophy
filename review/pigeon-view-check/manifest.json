@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-17T13:23:19.391Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "16",
+      "id": "pigeon",
+      "title": "迷信鸽子",
+      "actual": "16-pigeon.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/16-pigeon.png",
+      "alternate": "16-pigeon-alternate.png",
+      "alternateLabel": "计时投食后"
+    }
+  ]
+}

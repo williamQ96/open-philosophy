@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-17T14:04:03.966Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "23",
+      "id": "emotion-orientation",
+      "title": "情绪：向上与向下",
+      "actual": "23-emotion-orientation.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/23-emotion-orientation.png",
+      "alternate": "23-emotion-orientation-alternate.png",
+      "alternateLabel": "另一方向框架"
+    }
+  ]
+}

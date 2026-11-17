@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-17T13:11:32.419Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "15",
+      "id": "language-wall",
+      "title": "墙两侧的语言",
+      "actual": "15-language-wall.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/15-language-wall.png",
+      "alternate": "15-language-wall-alternate.png",
+      "alternateLabel": "接收者建造后"
+    }
+  ]
+}

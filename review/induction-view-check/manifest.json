@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-17T13:49:42.979Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "17",
+      "id": "induction",
+      "title": "鸡与归纳",
+      "actual": "17-induction.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/17-induction.png",
+      "alternate": "17-induction-alternate.png",
+      "alternateLabel": "推进一天后"
+    }
+  ]
+}

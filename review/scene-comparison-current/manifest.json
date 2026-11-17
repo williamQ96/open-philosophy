@@ -1,0 +1,326 @@
+{
+  "capturedAt": "2026-11-17T16:02:19.999Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "01",
+      "id": "sisyphus",
+      "title": "西西弗斯",
+      "actual": "01-sisyphus.png",
+      "concept": "../concept-renders-2026-11-16/01-sisyphus.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "01-sisyphus-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "01-sisyphus-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "id": "panopticon",
+      "title": "环形监狱",
+      "actual": "02-panopticon.png",
+      "concept": "../concept-renders-2026-11-16/02-panopticon.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "02-panopticon-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "02-panopticon-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "id": "cave",
+      "title": "洞穴寓言",
+      "actual": "03-cave.png",
+      "concept": "../concept-renders-2026-11-16/03-cave.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "03-cave-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "03-cave-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "04",
+      "id": "ship",
+      "title": "忒修斯之船",
+      "actual": "04-ship.png",
+      "concept": "../concept-renders-2026-11-16/04-ship.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "04-ship-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "04-ship-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "05",
+      "id": "veil",
+      "title": "无知之幕",
+      "actual": "05-veil.png",
+      "concept": "../concept-renders-2026-11-16/05-veil.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "05-veil-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "05-veil-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "06",
+      "id": "trolley",
+      "title": "电车难题",
+      "actual": "06-trolley.png",
+      "concept": "../concept-renders-2026-11-16/06-trolley.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "06-trolley-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "06-trolley-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "07",
+      "id": "vat",
+      "title": "缸中之脑",
+      "actual": "07-vat.png",
+      "concept": "../concept-renders-2026-11-16/07-vat.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "07-vat-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "07-vat-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "08",
+      "id": "free-will",
+      "title": "自由意志与决定论",
+      "actual": "08-free-will.png",
+      "concept": "../concept-renders-2026-11-16/08-free-will.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "08-free-will-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "08-free-will-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "09",
+      "id": "chinese-room",
+      "title": "中文房间",
+      "actual": "09-chinese-room.png",
+      "concept": "../concept-renders-2026-11-16/09-chinese-room.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "09-chinese-room-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "09-chinese-room-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "10",
+      "id": "socratic",
+      "title": "苏格拉底式无知",
+      "actual": "10-socratic.png",
+      "concept": "../concept-renders-2026-11-16/10-socratic.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "10-socratic-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "10-socratic-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "11",
+      "id": "newcomb",
+      "title": "纽科姆问题",
+      "actual": "11-newcomb.png",
+      "concept": "../concept-renders-2026-11-16/11-newcomb.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "11-newcomb-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "11-newcomb-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "12",
+      "id": "recurrence",
+      "title": "永恒轮回",
+      "actual": "12-recurrence.png",
+      "concept": "../concept-renders-2026-11-16/12-recurrence.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "12-recurrence-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "12-recurrence-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "13",
+      "id": "butterfly",
+      "title": "庄周梦蝶",
+      "actual": "13-butterfly.png",
+      "concept": "../concept-renders-2026-11-16/13-butterfly.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "13-butterfly-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "13-butterfly-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "14",
+      "id": "monkey",
+      "title": "无限猴子定理",
+      "actual": "14-monkey.png",
+      "concept": "../concept-renders-2026-11-16/14-monkey.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "14-monkey-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "14-monkey-slider-1.png"
+        }
+      ]
+    },
+    {
+      "number": "15",
+      "id": "language-wall",
+      "title": "墙两侧的语言",
+      "actual": "15-language-wall.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/15-language-wall.png",
+      "alternate": "15-language-wall-alternate.png",
+      "alternateLabel": "接收者建造后"
+    },
+    {
+      "number": "16",
+      "id": "pigeon",
+      "title": "迷信鸽子",
+      "actual": "16-pigeon.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/16-pigeon.png",
+      "alternate": "16-pigeon-alternate.png",
+      "alternateLabel": "计时投食后"
+    },
+    {
+      "number": "17",
+      "id": "induction",
+      "title": "鸡与归纳",
+      "actual": "17-induction.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/17-induction.png",
+      "alternate": "17-induction-alternate.png",
+      "alternateLabel": "推进一天后"
+    },
+    {
+      "number": "18",
+      "id": "schedules",
+      "title": "固定与可变比率",
+      "actual": "18-schedules.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/18-schedules.png",
+      "alternate": "18-schedules-alternate.png",
+      "alternateLabel": "可变比率",
+      "progress": "18-schedules-progress.png"
+    },
+    {
+      "number": "19",
+      "id": "stimulation",
+      "title": "自我刺激与选择",
+      "actual": "19-stimulation.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/19-stimulation.png",
+      "alternate": "19-stimulation-alternate.png",
+      "alternateLabel": "切换竞争条件"
+    },
+    {
+      "number": "20",
+      "id": "twins",
+      "title": "双胞胎与遗传率",
+      "actual": "20-twins.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/20-twins.png",
+      "alternate": "20-twins-alternate.png",
+      "alternateLabel": "不同家庭环境"
+    },
+    {
+      "number": "21",
+      "id": "argument-frames",
+      "title": "争论：战争还是共同绘图？",
+      "actual": "21-argument-frames.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/21-argument-frames.png",
+      "alternate": "21-argument-frames-alternate.png",
+      "alternateLabel": "共同绘图框架"
+    },
+    {
+      "number": "22",
+      "id": "time-frames",
+      "title": "时间：金钱还是花园？",
+      "actual": "22-time-frames.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/22-time-frames.png",
+      "alternate": "22-time-frames-alternate.png",
+      "alternateLabel": "花园框架"
+    },
+    {
+      "number": "23",
+      "id": "emotion-orientation",
+      "title": "情绪：向上与向下",
+      "actual": "23-emotion-orientation.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/23-emotion-orientation.png",
+      "alternate": "23-emotion-orientation-alternate.png",
+      "alternateLabel": "另一方向框架"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-11-17T13:09:26.326Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "18",
+      "id": "schedules",
+      "title": "固定与可变比率",
+      "actual": "18-schedules.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/18-schedules.png",
+      "alternate": "18-schedules-alternate.png",
+      "alternateLabel": "可变比率",
+      "progress": "18-schedules-progress.png"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T14:14:31.042Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "12",
+      "id": "recurrence",
+      "title": "永恒轮回",
+      "actual": "12-recurrence.png",
+      "concept": "../concept-renders-2026-11-16/12-recurrence.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "12-recurrence-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "12-recurrence-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

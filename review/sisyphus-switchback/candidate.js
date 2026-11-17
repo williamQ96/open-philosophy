@@ -1,0 +1,12 @@
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {buildSisyphusSwitchback} from '../../src/sisyphus-switchback.js';
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xd5d2c6);scene.fog=new THREE.Fog(0xd5d2c6,23,40);
+const camera=new THREE.PerspectiveCamera(38,innerWidth/innerHeight,.1,100);camera.position.set(12,10,16);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;document.body.append(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(0,1.5,0);controls.update();
+scene.add(new THREE.HemisphereLight(0xfff3dc,0x5e645b,2));const sun=new THREE.DirectionalLight(0xffdfb7,2);sun.position.set(-4,10,7);sun.castShadow=true;scene.add(sun);
+const view=buildSisyphusSwitchback(scene,null,callback=>new GLTFLoader().load('../../assets/moon_rock_02.glb',gltf=>callback(gltf.scene)));
+const start=performance.now();function draw(){view.update((performance.now()-start)/1000,.5);renderer.render(scene,camera);requestAnimationFrame(draw)}draw();
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});

@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T14:11:24.028Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "05",
+      "id": "veil",
+      "title": "无知之幕",
+      "actual": "05-veil.png",
+      "concept": "../concept-renders-2026-11-16/05-veil.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "05-veil-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "05-veil-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

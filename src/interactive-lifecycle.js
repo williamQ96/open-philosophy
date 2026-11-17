@@ -1,0 +1,2 @@
+// Re-rendering at a breakpoint or language change keeps the active control, if any.
+export function remountPreservingFocus(document,host,view,mount){const active=document.activeElement;const key=host.contains(active)?active?.dataset?.focusKey:null;view?.dispose();const next=mount();if(key){for(const element of host.querySelectorAll('[data-focus-key]'))if(element.dataset.focusKey===key){element.focus({preventScroll:true});break}}return next}

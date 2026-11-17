@@ -1,0 +1,23 @@
+{
+  "capturedAt": "2026-11-17T13:45:04.062Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "08",
+      "id": "free-will",
+      "title": "自由意志与决定论",
+      "actual": "08-free-will.png",
+      "concept": "../concept-renders-2026-11-16/08-free-will.png",
+      "endpoints": [
+        {
+          "value": 0,
+          "file": "08-free-will-slider-0.png"
+        },
+        {
+          "value": 1,
+          "file": "08-free-will-slider-1.png"
+        }
+      ]
+    }
+  ]
+}

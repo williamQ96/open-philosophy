@@ -1,0 +1,17 @@
+// Generate a small, untextured derivative from the verified Poly Haven Moon Rock 02 glTF + BIN.
+// Usage: node scripts/build-boulder.mjs <directory containing original files>
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import * as THREE from 'three';
+const dir=process.argv[2];if(!dir)throw Error('Pass the directory containing the original Moon Rock 02 glTF and BIN');
+const read=(name,sha)=>{const b=fs.readFileSync(path.join(dir,name));if(crypto.createHash('sha256').update(b).digest('hex')!==sha)throw Error('Unexpected source hash: '+name);return b};
+const spec=JSON.parse(read('moon_rock_02_1k.gltf','fada2419ab6de440c24081bf06545f37c41c3d4f8bb57fc4d1ba45bdb35baf5d'));
+const bin=read('moon_rock_02.bin','3ba6af10eebb46347e4e0c9d3e2a836d1328525d9d47e82b798a13d9ca2b216f');
+function array(index,Type,width){const a=spec.accessors[index],v=spec.bufferViews[a.bufferView],offset=(v.byteOffset||0)+(a.byteOffset||0),length=a.count*width*Type.BYTES_PER_ELEMENT;return new Type(Uint8Array.from(bin.subarray(offset,offset+length)).buffer)}
+let geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(array(0,Float32Array,3),3));geometry.setAttribute('normal',new THREE.BufferAttribute(array(1,Float32Array,3),3));geometry.setIndex(new THREE.BufferAttribute(array(3,Uint16Array,1),1));
+// Keep the publisher's LOD0 mesh and normals, omit UVs/textures, and center and scale it.
+geometry.center();geometry.computeBoundingSphere();geometry.scale(0.83/geometry.boundingSphere.radius,0.83/geometry.boundingSphere.radius,0.83/geometry.boundingSphere.radius);geometry.computeBoundingBox();
+const pos=Buffer.from(geometry.attributes.position.array.buffer),norm=Buffer.from(geometry.attributes.normal.array.buffer),idx=Buffer.from(new Uint16Array(geometry.index.array).buffer);const pad=n=>(n+3)&~3;const data=Buffer.alloc(pad(pos.length)+pad(norm.length)+pad(idx.length));pos.copy(data,0);norm.copy(data,pad(pos.length));idx.copy(data,pad(pos.length)+pad(norm.length));const box=geometry.boundingBox;
+const doc={asset:{version:'2.0',generator:'Open Philosophy Moon Rock 02 LOD0 untextured'},scene:0,scenes:[{nodes:[0]}],nodes:[{mesh:0}],meshes:[{primitives:[{attributes:{POSITION:0,NORMAL:1},indices:2}]}],buffers:[{byteLength:data.length}],bufferViews:[{buffer:0,byteOffset:0,byteLength:pos.length,target:34962},{buffer:0,byteOffset:pad(pos.length),byteLength:norm.length,target:34962},{buffer:0,byteOffset:pad(pos.length)+pad(norm.length),byteLength:idx.length,target:34963}],accessors:[{bufferView:0,componentType:5126,count:geometry.attributes.position.count,type:'VEC3',min:box.min.toArray(),max:box.max.toArray()},{bufferView:1,componentType:5126,count:geometry.attributes.normal.count,type:'VEC3'},{bufferView:2,componentType:5123,count:geometry.index.count,type:'SCALAR'}]};
+const json=Buffer.from(JSON.stringify(doc)),jsonPad=Buffer.alloc(pad(json.length),0x20);json.copy(jsonPad);const head=Buffer.alloc(12),jhead=Buffer.alloc(8),bhead=Buffer.alloc(8);head.write('glTF');head.writeUInt32LE(2,4);head.writeUInt32LE(12+8+jsonPad.length+8+data.length,8);jhead.writeUInt32LE(jsonPad.length);jhead.write('JSON',4);bhead.writeUInt32LE(data.length);bhead.write('BIN\0',4);const out=Buffer.concat([head,jhead,jsonPad,bhead,data]);fs.writeFileSync('public/assets/moon_rock_02.glb',out);console.log(JSON.stringify({vertices:geometry.attributes.position.count,triangles:geometry.index.count/3,bytes:out.length,sha256:crypto.createHash('sha256').update(out).digest('hex')}));

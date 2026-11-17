@@ -1,0 +1,17 @@
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xe5ddca);
+const camera=new THREE.PerspectiveCamera(38,innerWidth/innerHeight,.01,50);camera.position.set(3.3,2.2,3.9);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,2));document.body.append(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(0,.8,.25);controls.update();scene.add(new THREE.HemisphereLight(0xffffff,0x777766,2));const light=new THREE.DirectionalLight(0xffffff,2);light.position.set(2,4,4);scene.add(light);
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(5,5),new THREE.MeshStandardMaterial({color:0x9e9b87}));floor.rotation.x=-Math.PI/2;scene.add(floor);
+const rock=new THREE.Mesh(new THREE.IcosahedronGeometry(.62,2),new THREE.MeshStandardMaterial({color:0x8f806d,flatShading:true}));rock.position.set(0,.62,.82);scene.add(rock);
+const model=await new GLTFLoader().loadAsync('./superhero-male-untextured.gltf');scene.add(model.scene);model.scene.traverse(o=>{if(o.isSkinnedMesh){o.material=new THREE.MeshStandardMaterial({color:o.name==='SuperHero_Male'?0xc59a7c:0x453c34,roughness:1});o.frustumCulled=false}});
+import {poseCandidate} from './pose-solver.js';
+import {createCandidateGarment} from './garment.js';
+const hair=await new GLTFLoader().loadAsync('./hair-untextured.gltf');hair.scene.traverse(o=>{if(o.isMesh)o.material=new THREE.MeshStandardMaterial({color:0x4e3b31,roughness:1})});scene.add(hair.scene);scene.updateMatrixWorld(true);model.scene.getObjectByName('Head').attach(hair.scene);
+const wrap=createCandidateGarment();scene.add(wrap);scene.updateMatrixWorld(true);model.scene.getObjectByName('pelvis').attach(wrap);
+poseCandidate(model.scene);
+document.querySelector('#rotation').addEventListener('input',event=>{const angle=Number(event.target.value);rock.rotation.z=angle;poseCandidate(model.scene,{rockRotation:angle})});
+function frame(){controls.update();renderer.render(scene,camera);requestAnimationFrame(frame)}frame();addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});

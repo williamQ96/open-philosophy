@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-17T13:20:45.856Z",
+  "base": "http://127.0.0.1:4174/open-philosophy/",
+  "cards": [
+    {
+      "number": "19",
+      "id": "stimulation",
+      "title": "自我刺激与选择",
+      "actual": "19-stimulation.png",
+      "concept": "../new-studies-concept-renders-2026-11-16/19-stimulation.png",
+      "alternate": "19-stimulation-alternate.png",
+      "alternateLabel": "切换竞争条件"
+    }
+  ]
+}
